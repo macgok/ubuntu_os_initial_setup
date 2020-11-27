@@ -1,0 +1,21 @@
+[Unit]
+Description=Log the Internet speed periodically using a script
+# After=network.target
+# After=systemd-user-sessions.service
+# After=network-online.target
+
+[Service]
+# User=gokul
+# Type=simple
+# PIDFile=/run/internetSpeed-service.pid
+ExecStart=/home/gokul/github/macgok/ubuntu_os_setup/internetSpeed.sh start
+# ExecReload=/home/gokul/startup.sh reload
+# ExecStop=/home/gokul/startup.sh stop
+# TimeoutSec=30
+# Restart=on-failure
+# RestartSec=30
+# StartLimitInterval=350
+# StartLimitBurst=10
+
+[Install]
+WantedBy=multi-user.target
