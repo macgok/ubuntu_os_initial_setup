@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo 'PS1="\n\[\033[01;34m\]\w [\t] \n\[\033[00m\]\$?:~$"' >> ~/.bashrc	# directory \n exit status$
+echo 'PS1="\n\[\033[01;34m\]\w \n\[\033[00m\]\$?:~$"' >> ~/.bashrc	# directory \n exit status$
 
 touch ~/.inputrc
 echo '# mappings to have up and down arrow searching through history:' >> ~/.inputrc
